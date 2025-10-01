@@ -37,16 +37,23 @@ body {
 
 /* NAVBAR */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 28px;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 nav .logo {
@@ -56,15 +63,17 @@ nav .logo {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: #1a1a1a;
 }
 
 nav .leaf {
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  background: #3da24a;
+  background: linear-gradient(135deg, #3da24a, #2e7d32);
   display: inline-block;
   transform: rotate(-20deg);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -77,10 +86,30 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--ink);
+  color: #1a1a1a;
   font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
 }
 
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #3da24a;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #3da24a;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
 .cart {
   display: flex;
   align-items: center;
