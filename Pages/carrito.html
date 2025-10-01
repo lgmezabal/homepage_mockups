@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Carrito — Unboxing</title>
+  <link rel="stylesheet" href="../Css/carrito.css">
+  <link rel="stylesheet" href = "../Css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+      <div class="logo"><span class="leaf"></span>UNBOXING</div>
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="cart">
+    <a href="#carrito" aria-label="Ver carrito">
+      <div class="carrito active">
+      <img src="../images/carrito-de-compras.png" alt="Carrito" />
+      </div>
+    </a>
+  </div>
+
+    </nav>
+
+  <main class="cart-container">
+    <section class="cart-items">
+      <h1>Tu carrito</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="https://via.placeholder.com/60" alt="Producto">
+              <span>Caja Premium</span>
+            </td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>$15.00</td>
+            <td><button class="remove">✕</button></td>
+          </tr>
+          <tr>
+            <td>
+              <img src="https://via.placeholder.com/60" alt="Producto">
+              <span>Bolsa Eco</span>
+            </td>
+            <td><input type="number" value="2" min="1"></td>
+            <td>$8.00</td>
+            <td><button class="remove">✕</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside class="cart-summary">
+      <h2>Resumen</h2>
+      <div class="summary-row"><span>Subtotal</span><span>$31.00</span></div>
+      <div class="summary-row"><span>Envío</span><span>$5.00</span></div>
+      <div class="summary-row total"><span>Total</span><span>$36.00</span></div>
+      <button class="checkout">Finalizar compra</button>
+    </aside>
+  </main>
+
+  <footer>
+    © 2025 Unboxing. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
