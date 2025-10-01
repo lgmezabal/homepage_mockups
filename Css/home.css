@@ -19,7 +19,7 @@ html, body {
 body {
   font-family: Montserrat, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: linear-gradient(120deg, #f7efe0, #f2c94c);
-  background-size: 400% 400%;
+  background-size: 500% 500%;
   animation: gradientShift 12s ease infinite;
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
@@ -302,4 +302,59 @@ footer {
   .hero-grid {
     grid-template-rows: 120px 120px 120px;
   }
+}
+.faq {
+  padding: 60px 40px;
+  background: #fff;
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto 60px;
+}
+
+.faq h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 16px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.faq-question.active::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-answer p {
+  padding: 8px 0;
+  color: var(--muted);
 }

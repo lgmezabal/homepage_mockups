@@ -87,11 +87,50 @@
           </div>
         </div>
       </section>
+      <section id="faq" class="faq">
+  <h2>Preguntas Frecuentes</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">¿Cuánto tarda el envío?</button>
+    <div class="faq-answer">
+      <p>El envío tarda entre 3 a 7 días hábiles dependiendo de tu ubicación.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">¿Puedo personalizar mis cajas?</button>
+    <div class="faq-answer">
+      <p>Sí, ofrecemos distintas opciones de personalización de packaging según tu pedido.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">¿Aceptan devoluciones?</button>
+    <div class="faq-answer">
+      <p>Aceptamos devoluciones dentro de los 14 días posteriores a la entrega en productos no personalizados.</p>
+    </div>
+  </div>
+</section>
     </div>
 
     <footer id="contacto">
       © 2025 Unboxing. Todos los derechos reservados.
     </footer>
   </div>
+  <script>
+  const faqButtons = document.querySelectorAll('.faq-question');
+
+  faqButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+      const answer = btn.nextElementSibling;
+      if (btn.classList.contains('active')) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+</script>
 </body>
 </html>
