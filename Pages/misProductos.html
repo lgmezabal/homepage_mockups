@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis productos</title>
+  <link rel="stylesheet" href="../Css/home.css" />
+  <link rel="stylesheet" href="../Css/misProductos.css" />
+</head>
+<body>
+      <div class="wrap">
+    <nav>
+      <div class="logo"><span class="leaf"></span>UNBOXING</div>
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="cart">
+        <a href="#carrito" aria-label="Ver carrito">
+          <div class="carrito">
+            <img src="../images/carrito-de-compras.png" alt="Carrito" />
+            <div class="cart-preview">
+              <p>2 productos en tu carrito</p>
+              <a href="#carrito">Ver carrito →</a>
+            </div>  
+          </div>
+        </a>
+      </div>
+    </nav>
+<section class="productos-dashboard">
+  <div class="productos-header">
+    <h2>Mis productos</h2>
+    <button class="crear-btn">+ Crear producto</button>
+  </div>
+
+  <div class="productos-table">
+    <div class="table-row table-head">
+      <div>Producto</div>
+      <div>Categoría</div>
+      <div>Precio</div>
+      <div>Inventario</div>
+      <div>Ventas</div>
+      <div>Estado</div>
+      <div>Acciones</div>
+    </div>
+
+    <div class="table-row">
+      <div>NVN</div>
+      <div>Caja</div>
+      <div>$13</div>
+      <div>15</div>
+      <div>10</div>
+      <div class="estado activo">Activo</div>
+      <div class="acciones">
+        <button class="accion toggle">⏸ Pausar</button>
+        <button class="accion editar">✏️ Editar</button>
+        <button class="accion eliminar">🗑️</button>
+      </div>
+    </div>
+
+    <div class="table-row">
+      <div>Bolsa aguas</div>
+      <div>Bolsa</div>
+      <div>$10</div>
+      <div>0</div>
+      <div>25</div>
+      <div class="estado pausado">Pausado</div>
+      <div class="acciones">
+        <button class="accion toggle">▶️ Reanudar</button>
+        <button class="accion editar">✏️ Editar</button>
+        <button class="accion eliminar">🗑️</button>
+      </div>
+    </div>
+
+    <div class="table-row">
+      <div>Organic Herbal Tea Blend</div>
+      <div>Infusión</div>
+      <div>$25.00</div>
+      <div>0</div>
+      <div>25</div>
+      <div class="estado archivado">Archivado</div>
+      <div class="acciones">
+        <button class="accion restore">♻️ Restaurar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

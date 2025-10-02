@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis productos</title>
+  <link rel="stylesheet" href="../Css/home.css" />
+  <link rel="stylesheet" href="../Css/misPedidos.css" />
+</head>
+<body>
+<section class="pedidos-dashboard">
+  <div class="pedidos-header">
+    <h2>Mis pedidos</h2>
+  </div>
+
+  <div class="pedidos-table">
+    <div class="table-row table-head">
+      <div>ID</div>
+      <div>Cliente</div>
+      <div>Estado</div>
+      <div>Total</div>
+      <div>Fecha</div>
+      <div>Acciones</div>
+    </div>
+
+    <!-- Pedido 1 -->
+    <div class="pedido-bloque">
+      <div class="table-row">
+        <div>a2b07b5e...</div>
+        <div>GraphicShowOwner</div>
+        <div class="estado entregado">✅ Entregado</div>
+        <div>$1,000</div>
+        <div>12/09/2023</div>
+        <div class="acciones">
+          <button class="accion toggle-detalle">🔍 Detalles</button>
+        </div>
+      </div>
+      <div class="detalle-pedido oculto">
+        <p><strong>Método de pago:</strong> Transferencia bancaria</p>
+        <p><strong>Entrega:</strong> Mensajería - Villa Crespo, CABA</p>
+        <p><strong>Notas:</strong> Entregar antes del viernes</p>
+        <p><strong>Historial:</strong> Pagado el 10/09, Entregado el 12/09</p>
+      </div>
+    </div>
+
+    <!-- Pedido 2 -->
+    <div class="pedido-bloque">
+      <div class="table-row">
+        <div>2e3b3e6e...</div>
+        <div>GraphicShowOwner</div>
+        <div class="estado pagado">💰 Pagado</div>
+        <div>$5,000</div>
+        <div>12/09/2023</div>
+        <div class="acciones">
+          <button class="accion toggle-detalle">🔍 Detalles</button>
+        </div>
+      </div>
+      <div class="detalle-pedido oculto">
+        <p><strong>Método de pago:</strong> MercadoPago</p>
+        <p><strong>Entrega:</strong> Retiro en persona</p>
+        <p><strong>Notas:</strong> Cliente pasará el sábado</p>
+        <p><strong>Historial:</strong> Pagado el 11/09</p>
+      </div>
+    </div>
+
+    <!-- Pedido 3 -->
+    <div class="pedido-bloque">
+      <div class="table-row">
+        <div>7f2e2e3e...</div>
+        <div>GraphicShowOwner</div>
+        <div class="estado pendiente">⏳ Pendiente</div>
+        <div>$2,307,000</div>
+        <div>12/09/2023</div>
+        <div class="acciones">
+          <button class="accion toggle-detalle">🔍 Detalles</button>
+        </div>
+      </div>
+      <div class="detalle-pedido oculto">
+        <p><strong>Método de pago:</strong> Efectivo</p>
+        <p><strong>Entrega:</strong> Envío por correo - Córdoba</p>
+        <p><strong>Notas:</strong> Confirmar dirección antes de enviar</p>
+        <p><strong>Historial:</strong> Pedido creado el 09/09</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Script para mostrar/ocultar detalles -->
+<script>
+  document.querySelectorAll('.toggle-detalle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const detalle = btn.closest('.pedido-bloque').querySelector('.detalle-pedido');
+      detalle.classList.toggle('oculto');
+    });
+  });
+</script>
+
+    <footer id="contacto">
+      © 2025 Unboxing. Todos los derechos reservados.
+    </footer>
+ </body>
+</html>

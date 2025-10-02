@@ -1,0 +1,121 @@
+.productos-dashboard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.productos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.productos-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.crear-btn {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.crear-btn:hover {
+  background-color: #37628c;
+}
+
+.productos-table {
+  display: grid;
+  gap: 12px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  align-items: center;
+  padding: 16px 24px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease;
+}
+
+.table-row:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.table-head {
+  background: var(--soft-blue);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.estado {
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  text-align: center;
+  width: fit-content;
+}
+
+.estado.activo {
+  background-color: #d4f4e4;
+  color: #2e7d32;
+}
+
+.estado.pausado {
+  background-color: #ffe0e0;
+  color: #c62828;
+}
+
+.estado.archivado {
+  background-color: #e0e0e0;
+  color: #666;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.accion {
+  background-color: var(--soft-blue);
+  color: var(--ink);
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.accion:hover {
+  background-color: var(--accent);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.restore {
+  background-color: #dbe7f0;
+  color: #333;
+}
+
+.restore:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
