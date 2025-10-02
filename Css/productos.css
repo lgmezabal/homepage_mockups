@@ -1,41 +1,16 @@
-:root{
-  --bg:#f7efe0;
-  --accent:#f2c94c;
-  --ink:#121212;
-  --muted:#6b6b6b;
-}
-
-*{box-sizing:border-box;margin:0;padding:0;}
-body{
-  font-family:Montserrat, sans-serif;
-  background:var(--bg);
-  color:var(--ink);
-  display:flex;
-  flex-direction:column;
-  min-height:100vh;
-}
-
-/* NAVBAR */
-nav{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:16px 28px;background:#fff;
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
-  position:sticky;top:0;z-index:1000;
-}
-nav .logo{font-weight:700;font-size:20px;display:flex;align-items:center;gap:8px;}
-nav .leaf{width:20px;height:20px;background:#3da24a;border-radius:4px;transform:rotate(-20deg);}
-nav ul{display:flex;gap:24px;list-style:none;}
-nav a{text-decoration:none;color:var(--ink);font-weight:500;}
-nav a.active{color:#3da24a;}
 
 /* PRODUCT GRID */
 .products-container{
   flex:1;
   padding:40px 60px;
+  border-radius: 14px;
+   margin-right: 10px;
+  margin-left: 10px;
 }
 .products-container h1{
   font-family:'Playfair Display', serif;
   font-size:28px;
+ 
   margin-bottom:30px;
 }
 .grid{
@@ -70,4 +45,77 @@ footer{
 /* RESPONSIVE */
 @media(max-width:600px){
   .products-container{padding:20px;}
+}
+.intro-productos {
+  background: linear-gradient(135deg, var(--soft-blue), var(--bg));
+  padding: 80px 60px;
+  text-align: center;
+  color: black;
+}
+
+.intro-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.intro-productos h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+  margin-top: -40px;
+}
+
+.intro-productos p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  color: black;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta:hover {
+  background: #37628c;
+  transform: translateY(-2px);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+.fondo-cajas {
+  background: url("../images/fondo_caja.png") center/cover no-repeat;
+  position: relative;
+  color: var(--ink);
+  height: 60%;
+}
+
+
+.fondo-cajas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(253, 248, 244, 0.64); /* capa cálida translúcida */
+  backdrop-filter: blur(4px) saturate(0.8);
+  z-index: 0;
+}
+
+.fondo-cajas > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.intro-wrap {
+  position: relative;
+  z-index: 1;
 }
