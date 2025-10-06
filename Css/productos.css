@@ -96,7 +96,7 @@ footer{
   background: url("../images/fondo_caja.png") center/cover no-repeat;
   position: relative;
   color: var(--ink);
-  height: 60%;
+  height: 58%;
 }
 
 
@@ -105,7 +105,7 @@ footer{
   position: absolute;
   inset: 0;
   background: rgba(253, 248, 244, 0.64); /* capa cálida translúcida */
-  backdrop-filter: blur(4px) saturate(0.8);
+  backdrop-filter: blur(0.8px) saturate(0.8);
   z-index: 0;
 }
 
