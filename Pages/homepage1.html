@@ -8,26 +8,36 @@
   <link rel="stylesheet" href="../Css/home.css">
 </head>
 <body>
-  <div class="wrap">
-    <nav>
-      <div class="logo"><span class="leaf"></span>UNBOXING</div>
-      <ul>
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <div class="cart">
-        <a href="#carrito" aria-label="Ver carrito">
-          <div class="carrito">
-            <img src="../images/carrito-de-compras.png" alt="Carrito" />
-            <div class="cart-preview">
-              <p>2 productos en tu carrito</p>
-              <a href="#carrito">Ver carrito →</a>
-            </div>  
-          </div>
-        </a>
-      </div>
-    </nav>
+<nav>
+  <div class="nav-left">
+    <div class="logo">
+      <a href="./homepage1.html">
+        <img class="logoUnbox" src="../images/unboxing_logo.PNG" alt="Unboxing logo" />
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-center">
+    <ul>
+      <li><a href="./homepage1.html">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+       <div class="cart">
+      <a href="./carrito.html" aria-label="Ver carrito">
+        <img src="../images/carrito-de-compras.png" alt="Carrito" />
+      </a>
+    </div>
+    <div class="perfil">
+      <img src="../images/profile.png" alt="Perfil" />
+    </div>
+ 
+  </div>
+</nav>
+
 
 <header id="hero" class="hero" role="banner">
   <div class="hero-left">
@@ -43,8 +53,8 @@
       <div class="hero-grid">
         <div class="img-box img-a"><img src="../images/box.jpg" alt="Imagen 1"></div>
         <div class="img-box img-b"><img src="../images/box 3.jpg" alt="Imagen 2"></div>
-        <div class="img-box img-c"><img src="" alt="Imagen 3"></div>
-        <div class="img-box img-d"><img src="" alt="Imagen 4"></div>
+        <div class="img-box img-c"><img src="../images/cajas.png" alt="Im"></div>
+        <div class="img-box img-d"><img src="../images/bolsitas.png" alt="Imagen 4"></div>
         <div class="img-box img-e"><img src="../images/stickerrectangle.jpg" alt="Imagen 5"></div>
         <div class="img-box img-f"><img src="../images/stickercircle.jpg" alt="Imagen 6"></div>
       </div>
@@ -56,38 +66,39 @@
         <h2 id="prod-title">Explora nuestros productos</h2>
         <div class="grid-three">
           <div class="product">
+             <a href="./productos.html">
             <div class="icon">
               <img src="../images/box2.jpg" alt="Caja">
             </div>
             <p>Cajas</p>
+            </a>
           </div>
 
           <div class="product">
+            <a  href="./productos.html">
             <div class="icon">
-              <svg width="80" height="90" viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                <path d="M8 30 Q12 10 40 10 Q68 10 72 30 L72 68 Q72 76 64 76 L16 76 Q8 76 8 68 Z" fill="none" stroke="#1f2937" stroke-width="3"/>
-                <path d="M24 30 Q24 20 40 20 Q56 20 56 30" fill="none" stroke="#1f2937" stroke-width="3"/>
-              </svg>
+              <img src="../images/bolsas.png" alt="Caja">
             </div>
             <p>Bolsas</p>
+            </a>
           </div>
 
           <div class="product">
+            <a  href="./productos.html">
             <div class="icon">
-              <img src="../images/stickers.png" alt="StickerRec">
+              <img src="../images/sticker.png" alt="StickerRec">
             </div>
             <p>Stickers Rectangulares</p>
+            </a>
           </div>
 
           <div class="product">
+            <a href="./productos.html">
             <div class="icon">
-              <svg width="72" height="90" viewBox="0 0 72 90" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                <rect x="8" y="8" width="56" height="60" rx="6" fill="none" stroke="#1f2937" stroke-width="3"/>
-                <circle cx="54" cy="22" r="12" fill="none" stroke="#1f2937" stroke-width="3"/>
-                <path d="M50 20 L48 23 L46 19" stroke="#1f2937" stroke-width="3" fill="none"/>
-              </svg>
+              <img src="../images/circulares.png" alt="Caja">
             </div>
             <p>Stickers Circulares</p>
+            </a>
           </div>
         </div>
       </section>
@@ -130,7 +141,7 @@
       <a href="#productos" class="box-btn">Descubrí qué hace especial nuestro packaging</a>
     </div>
     <div class="box-visual">
-      <img src="../images/box.jpg" alt="Caja personalizada" />
+      <img src="../images/cajasHowTo.png" alt="Caja personalizada" />
     </div>
   </div>
 </section>

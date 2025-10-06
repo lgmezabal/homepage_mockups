@@ -10,14 +10,38 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav>
-    <div class="logo"><span class="leaf"></span>UNBOXING</div>
+  <div class="wrap">
+<nav>
+  <div class="nav-left">
+    <div class="logo">
+      <a href="./homepage1.html">
+        <img class="logoUnbox" src="../images/unboxing_logo.PNG" alt="Unboxing logo" />
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-center">
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html" class="active">Productos</a></li>
-      <li><a href="carrito.html">Carrito</a></li>
+      <li><a href="./homepage1.html">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
-  </nav>
+  </div>
+
+  <div class="nav-right">
+       <div class="cart">
+      <a href="./carrito.html" aria-label="Ver carrito">
+        <img src="../images/carrito-de-compras.png" alt="Carrito" />
+      </a>
+    </div>
+    <div class="perfil">
+      <img src="../images/profile.png" alt="Perfil" />
+    </div>
+ 
+  </div>
+</nav>
+</div>
+
 
   <!-- PRODUCT GRID -->
 <section class="intro-productos fondo-cajas">
@@ -36,29 +60,29 @@
     <div class="grid">
       <!-- CARD PRODUCTO -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Producto">
+        <img src="../images/box2.jpg" alt="Producto">
         <div class="info">
           <h2>Caja Premium</h2>
           <p>$15.00</p>
-          <button type="button" aria-label="Ver detalles del producto">Ir al Producto</button>
+          <a href="./specificproduct.html"><button type="button" aria-label="Ver detalles del producto"> Ir al Producto</button></a>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Producto">
+        <img src="../images/bolsitas.png" alt="Producto">
         <div class="info">
           <h2>Bolsa Eco</h2>
           <p>$8.00</p>
-          <button type="button" aria-label="Ver detalles del producto">Ir al Producto</button>
+          <a href="./specificproduct.html"><button type="button" aria-label="Ver detalles del producto"> Ir al Producto</button></a>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Producto">
+        <img src="../images/stickers.png" alt="Producto">
         <div class="info">
           <h2>Stickers Creativos</h2>
           <p>$5.00</p>
-          <button type="button" aria-label="Ver detalles del producto">Ir al Producto</button>
+          <a href="./specificproduct.html"><button type="button" aria-label="Ver detalles del producto"> Ir al Producto</button></a>
         </div>
       </div>
     </div>

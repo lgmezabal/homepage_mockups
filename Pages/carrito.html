@@ -9,22 +9,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-      <div class="logo"><span class="leaf"></span>UNBOXING</div>
-      <ul>
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <div class="cart">
-    <a href="#carrito" aria-label="Ver carrito">
-      <div class="carrito active">
-      <img src="../images/carrito-de-compras.png" alt="Carrito" />
-      </div>
-    </a>
+<div class="wrap">
+ <nav>
+  <div class="nav-left">
+    <div class="logo">
+      <a href="./homepage1.html">
+        <img class="logoUnbox" src="../images/unboxing_logo.PNG" alt="Unboxing logo" />
+      </a>
+    </div>
   </div>
 
-    </nav>
+  <div class="nav-center">
+    <ul>
+      <li><a href="./homepage1.html">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+       <div class="cart">
+      <a href="./carrito.html" aria-label="Ver carrito">
+        <img src="../images/carrito-de-compras.png" alt="Carrito" />
+      </a>
+    </div>
+    <div class="perfil">
+      <img src="../images/profile.png" alt="Perfil" />
+    </div>
+ 
+  </div>
+</nav>
+</div>
+
 
   <main class="cart-container">
     <section class="cart-items">
@@ -41,7 +57,7 @@
         <tbody>
           <tr>
             <td>
-              <img src="https://via.placeholder.com/60" alt="Producto">
+              <img src="../images/box_top.png" alt="Producto">
               <span>Caja Premium</span>
             </td>
             <td><input type="number" value="1" min="1"></td>
@@ -50,7 +66,7 @@
           </tr>
           <tr>
             <td>
-              <img src="https://via.placeholder.com/60" alt="Producto">
+              <img src="../images/bolsitas.png" alt="Producto">
               <span>Bolsa Eco</span>
             </td>
             <td><input type="number" value="2" min="1"></td>
